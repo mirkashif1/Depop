@@ -1,4 +1,4 @@
-[DEPOP]
+DEPOP
 
 [This mod removes redundant or less prominent kingdoms and empires, providing a streamlined and optimized map for smoother gameplay. Enjoy improved performance and a more focused gameplay experience without unnecessary clutter.]
 Features
