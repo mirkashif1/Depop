@@ -16065,26 +16065,10 @@ e_scandinavia = {
 	}
 
 	k_sapmi ={
-		landless = yes
-        hide_if_no_title = yes
-        de_jure_liege = k_sapmi_placeholder
-        no = {
-        has_holder = yes
-        }
-
-        capital = c_placeholder
-        cannot_create = yes
- 
-         # You can also define placeholder liege if necessary
-         k_sapmi_placeholder = {
-			landless = yes
-        hide_if_no_title = yes
-        cannot_create = yes
-
+		color = { 0 0 0 }
+        landless = yes
 		 }
         
-	}
-
 	k_denmark = {
 		color = { 247 77 54 }
 
@@ -24435,22 +24419,9 @@ e_russia = {	#Kievan Rus
 	}
 
 	k_bjarmaland = {
-		landless = yes
-        hide_if_no_title = yes
-        de_jure_liege = k_bjarmaland_placeholder
-        no = {
-        has_holder = yes
-        }
-
-        capital = c_placeholder
-        cannot_create = yes
-
-        # Placeholder liege
-        k_bjarmaland_placeholder = {
+		color = { 0 0 0 }
         landless = yes
-        hide_if_no_title = yes
-        cannot_create = yes
-        }
+        
 	}
 
 }
@@ -26226,21 +26197,8 @@ e_volga-ural = {
 	}
 
 	k_permia = {
-		landless = yes
-		hide_if_no_title = yes
-		de_jure_liege = k_permia_placeholder
-		no = {
-			has_holder = yes
-		}
-
-		capital = c_placeholder
-		cannot_create = yes
-
-		k_permia_placeholder = {
-			landless = yes
-			hide_if_no_title = yes
-			cannot_create = yes
-		}
+		color = { 0 0 0 }
+        landless = yes
 	}
 
 	k_bashkiria = {
@@ -26574,22 +26532,9 @@ e_volga-ural = {
 }
 
 e_siberia = {
-	landless = yes
-	hide_if_no_title = yes
-	de_jure_liege = e_siberia_placeholder
-	no = {
-		has_holder = yes
+	color = { 0 0 0 }
+    landless = yes
 	}
-
-	capital = c_placeholder
-	cannot_create = yes
-
-	e_siberia_placeholder = {
-		landless = yes
-		hide_if_no_title = yes
-		cannot_create_yes
-	}
-}
 
 e_mongolia = {
 	color = { 90 90 240 }
@@ -27893,19 +27838,8 @@ e_mongolia = {
 	}
 
 	k_buryatia = {
-		landless = yes
-		hide_if_no_title = yes
-		de_jure_liege = k_buryatia_placeholder
-		no = {
-			has_holder = yes
-		}
-
-		capital = c_placeholder
-		cannot_create_yes
-
-		k_buryatia_placeholder = yes
-		hide_if_no_title = yes
-		cannot_create = yes
+		color = { 0 0 0 }
+        landless = yes
 	}
 
 	k_angara = {
@@ -49801,22 +49735,8 @@ e_abyssinia = {
 	}
 
 	k_damot = {
-		landless = yes
-		hide_if_no_title = yes
-		de_jure_liege = k_damot_placeholder
-		no = {
-			has_holder = yes
-		}
-
-		capital = c_placeholder
-		cannot_create = yes
-
-		k_damot_placeholder = {
-			landless = yes
-			hide_if_no_title = yes
-			cannot_create = yes
-		}
-		
+		color = { 0 0 0 }
+        landless = yes
 	}
 
 	k_adal = {
@@ -50211,77 +50131,23 @@ e_abyssinia = {
 }
 
 e_ajuraan = {
-	landless = yes
-	hide_if_no_title = yes
-	de_jure_liege = e_ajuraan_placeholder
-	no = {
-		has_holder = yes
-	}
-
-	capital = c_placeholder
-
-	e_ajuraan_placeholder = {
-		landless = yes
-		hide_if_no_title = yes
-		cannot_create = yes
-	}
+	color = { 0 0 0 }
+    landless = yes
 }
 
 e_kanem_bornu = {
+    color = { 0 0 0 }
     landless = yes
-    hide_if_no_title = yes
-    de_jure_liege = e_africa_placeholder
-    no = {
-        has_holder = yes
-    }
-
-    capital = c_placeholder
-    cannot_create = yes
-
-    # Placeholder liege
-    e_africa_placeholder = {
-        landless = yes
-        hide_if_no_title = yes
-        cannot_create = yes
-    }
 }
 
 e_mali = {
+    color = { 0 0 0 }
     landless = yes
-    hide_if_no_title = yes
-    de_jure_liege = e_africa_placeholder
-    no = {
-        has_holder = yes
-    }
-
-    capital = c_placeholder
-    cannot_create = yes
-
-    # Placeholder liege
-    e_africa_placeholder = {
-        landless = yes
-        hide_if_no_title = yes
-        cannot_create = yes
-    }
 }
 
 e_guinea = {
+    color = { 0 0 0 }
     landless = yes
-    hide_if_no_title = yes
-    de_jure_liege = e_africa_placeholder
-    no = {
-        has_holder = yes
-    }
-
-    capital = c_placeholder
-    cannot_create = yes
-
-    # Placeholder liege
-    e_africa_placeholder = {
-        landless = yes
-        hide_if_no_title = yes
-        cannot_create = yes
-    }
 }
 
 e_india = {		# Titular, created by special decision only if entire India is united
@@ -54527,19 +54393,8 @@ e_bengal = {
 	}
 
 	k_pagan = {
-       landless = yes
-       hide_if_no_title = yes
-       de_jure_liege = e_placeholder
-       no = {
-           has_holder = yes
-        }
-
-        # Placeholder de jure liege
-       e_placeholder = {
-           landless = yes
-           hide_if_no_title = yes
-           cannot_create = yes
-       }
+       color = { 0 0 0 }
+    landless = yes
     }
 	
 }
@@ -56207,19 +56062,8 @@ e_deccan = {
 }
 
 e_tibet = {
+   color = { 0 0 0 }
     landless = yes
-    hide_if_no_title = yes
-    de_jure_liege = e_placeholder
-    no = {
-        has_holder = yes
-    }
-
-    # Placeholder de jure liege
-    e_placeholder = {
-        landless = yes
-        hide_if_no_title = yes
-        cannot_create = yes
-    }
 }
 
 # OBSOLETE TITLES
