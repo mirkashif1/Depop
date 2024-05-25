@@ -16063,11 +16063,6 @@ e_scandinavia = {
 			}
 		}
 	}
-
-	k_sapmi ={
-		color = { 0 0 0 }
-        landless = yes
-		 }
         
 	k_denmark = {
 		color = { 247 77 54 }
@@ -24418,12 +24413,6 @@ e_russia = {	#Kievan Rus
 		}
 	}
 
-	k_bjarmaland = {
-		color = { 0 0 0 }
-        landless = yes
-        
-	}
-
 }
 
 e_caspian-pontic_steppe = {
@@ -26195,12 +26184,6 @@ e_volga-ural = {
 			}
 		}
 	}
-
-	k_permia = {
-		color = { 0 0 0 }
-        landless = yes
-	}
-
 	k_bashkiria = {
 		color = { 50 65 55 }
 
@@ -26530,8 +26513,6 @@ e_volga-ural = {
 		}
 	}
 }
-
-e_siberia = {
 	color = { 0 0 0 }
     landless = yes
 	}
@@ -27835,11 +27816,6 @@ e_mongolia = {
 				}
 			}
 		}
-	}
-
-	k_buryatia = {
-		color = { 0 0 0 }
-        landless = yes
 	}
 
 	k_angara = {
@@ -45714,36 +45690,6 @@ e_maghreb = {
 		}
 	}
 
-	k_anbiya = {
-		landless = yes
-		hide_if_no_title = yes
-		de_jure_liege = c_placeholder
-		cannot_create = yes
-
-		k_anbiya = {
-			landless = yes
-			hide_if_no_title = yes
-			cannot_create = yes
-		}
-	}
-
-	k_sahara = {
-		landless = yes
-		hide_if_no_title = yes
-		de_jure_liege = k_sahara_placeholder
-		no = {
-			has_holder = yes
-		}
-
-		capital = c_placeholder
-		cannot_create = yes
-
-		k_sahara_placeholder = {
-			landless = yes
-			hide_if_no_title = yes
-			cannot_create = yes
-		}
-	}
 }
 
 e_arabia = {
@@ -50130,26 +50076,6 @@ e_abyssinia = {
 	}
 }
 
-e_ajuraan = {
-	color = { 0 0 0 }
-    landless = yes
-}
-
-e_kanem_bornu = {
-    color = { 0 0 0 }
-    landless = yes
-}
-
-e_mali = {
-    color = { 0 0 0 }
-    landless = yes
-}
-
-e_guinea = {
-    color = { 0 0 0 }
-    landless = yes
-}
-
 e_india = {		# Titular, created by special decision only if entire India is united
 	color = { 255 110 0 }
 
@@ -54392,11 +54318,6 @@ e_bengal = {
 		}
 	}
 
-	k_pagan = {
-       color = { 0 0 0 }
-    landless = yes
-    }
-	
 }
 
 e_deccan = {
@@ -56059,11 +55980,6 @@ e_deccan = {
 			}
 		}
 	}
-}
-
-e_tibet = {
-   color = { 0 0 0 }
-    landless = yes
 }
 
 # OBSOLETE TITLES
