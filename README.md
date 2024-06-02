@@ -25,8 +25,8 @@ Features
     Tibet:
         All kingdoms and empires
 
-    Bengal:
-        Kingdom of Pagan]
+    India:
+        Removed everything Except the Kigdom of Kashmir.]
     [Any additional changes or improvements made.]
 
 Installation
