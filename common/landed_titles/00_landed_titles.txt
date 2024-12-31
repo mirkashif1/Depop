@@ -1,6 +1,7 @@
 ﻿@correct_culture_primary_score = 100
 @better_than_the_alternatives_score = 50
 @always_primary_score = 1000
+@never_primary_score = -1000
 
 # EMPIRES
 
@@ -315,6 +316,10 @@ e_golden_horde = {
 	definite_form = yes
 
 	capital = c_itil
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 }
 
 e_ilkhanate = {
@@ -324,6 +329,10 @@ e_ilkhanate = {
 	definite_form = yes
 
 	capital = c_tabriz
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 }
 
 e_chagatai = {
@@ -333,6 +342,10 @@ e_chagatai = {
 	#definite_form = yes
 
 	capital = c_samarkand
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 }
 
 e_black_horde = {
@@ -342,6 +355,10 @@ e_black_horde = {
 	definite_form = yes
 
 	capital = c_delhi
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 }
 
 e_white_horde = {
@@ -351,6 +368,10 @@ e_white_horde = {
 	definite_form = yes
 
 	capital = c_praha
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 }
 
 e_aarlud_khanate = {
@@ -360,6 +381,10 @@ e_aarlud_khanate = {
 	definite_form = yes
 
 	capital = c_upland
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 }
 
 e_togskol_khanate = {
@@ -369,6 +394,10 @@ e_togskol_khanate = {
 	definite_form = yes
 
 	capital = c_roma
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 }
 
 e_baruun_khanate = {
@@ -378,6 +407,10 @@ e_baruun_khanate = {
 	definite_form = yes
 
 	capital = c_alexandria
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 }
 
 e_uyghur_khanate = {
@@ -386,6 +419,10 @@ e_uyghur_khanate = {
 	definite_form = yes
 
 	capital = c_karabalgasun
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 
 	ai_primary_priority = {
 		if = {
@@ -404,6 +441,10 @@ e_kirghiz_khanate = {
 
 	capital = c_karabalgasun
 
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
+
 	ai_primary_priority = {
 		if = {
 			limit = {
@@ -420,6 +461,10 @@ e_mongol_empire = {
 
 	definite_form = yes
 
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
+
 	ai_primary_priority = {
 		add = @always_primary_score
 	}
@@ -431,6 +476,14 @@ e_kara_khitai = { #aka Western Liao / Great Liao
 	color = { 10 10 10 }
 
 	capital = c_balashagun
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
+
+	cultural_names = {
+		name_list_khitan = cn_kara_khitai
+	}
 }
 
 
@@ -440,6 +493,10 @@ e_timurids = {
 	definite_form = yes
 
 	capital = c_samarkand
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 }
 
 #Jewish Religious Heads
@@ -635,10 +692,13 @@ e_outremer = {
 
 	capital = c_jerusalem
 
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
+
 	ai_primary_priority = {
 		add = @always_primary_score
 	}
-
 }
 
 # FP2
@@ -849,17 +909,29 @@ e_latin_empire = {
 	definite_form = yes
 
 	capital = c_byzantion
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 }
 
 e_slavia = {
 	color = { 39 27 27 }
 	capital = c_kiev # Kiev
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 }
 
 e_armenia = {
 	color = { 198 29 29 }
 
 	capital = c_hayk # Ani
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 }
 
 e_north_sea = {
@@ -867,6 +939,10 @@ e_north_sea = {
 	definite_form = yes
 
 	capital = c_sjaelland	#Roskilde
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 }
 
 # TITULAR KINGDOMS
@@ -946,6 +1022,10 @@ e_hre = {
 	capital = c_aachen
 	definite_form = yes
 
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
+
 	ai_primary_priority = {
 		if = {
 			limit = {
@@ -972,6 +1052,10 @@ e_britannia = {
 		name_list_pictish = cn_pictavia
 		name_list_irish = cn_alba
 		name_list_gaelic = cn_alba
+	}
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
 	}
 
 	ai_primary_priority = {
@@ -4172,6 +4256,7 @@ e_germany = {
 				}
 			}
 		}
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
 	}
 
 	ai_primary_priority = {
@@ -7643,6 +7728,9 @@ e_roman_empire = {
 	definite_form = yes
 	can_be_named_after_dynasty = no
 
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 }
 
 e_byzantium = {
@@ -7651,6 +7739,16 @@ e_byzantium = {
 	capital = c_byzantion
 
 	definite_form = yes
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+		custom_tooltip = {
+			text = is_latin_emperor_tt
+			NOT = {
+				primary_title = title:e_latin_empire
+			}
+		}
+	}
 
 	ai_primary_priority = {
 		if = {
@@ -7686,7 +7784,7 @@ e_byzantium = {
 	}
 
 	k_rum = {
-		color = { 144 182 161 }
+		color = { 146 209 205 }
 	}
 
 	k_mentese = {
@@ -7728,7 +7826,12 @@ e_byzantium = {
 			if = {
 				limit = {
 					NOT = { culture = culture:greek }
-					culture = { has_cultural_pillar = heritage_byzantine }
+					culture = {
+						OR = {
+							has_cultural_pillar = heritage_byzantine
+							has_cultural_pillar = heritage_caucasian
+						}
+					} 
 				}
 				add = @better_than_the_alternatives_score
 			}
@@ -7740,7 +7843,7 @@ e_byzantium = {
 			capital = c_byzantion
 
 			c_byzantion = {
-				color = { 180 25 100 }
+				color = { 180 35 110 }
 
 				#capital = 496 # Constantinople
 
@@ -8230,7 +8333,12 @@ e_byzantium = {
 			if = {
 				limit = {
 					NOT = { culture = culture:greek }
-					culture = { has_cultural_pillar = heritage_byzantine }
+					culture = {
+						OR = {
+							has_cultural_pillar = heritage_byzantine
+							has_cultural_pillar = heritage_caucasian
+						}
+					}
 				}
 				add = @better_than_the_alternatives_score
 			}
@@ -8514,7 +8622,12 @@ e_byzantium = {
 			if = {
 				limit = {
 					NOT = { culture = culture:greek }
-					culture = { has_cultural_pillar = heritage_byzantine }
+					culture = {
+						OR = {
+							has_cultural_pillar = heritage_byzantine
+							has_cultural_pillar = heritage_caucasian
+						}
+					}
 				}
 				add = @better_than_the_alternatives_score
 			}
@@ -8712,10 +8825,19 @@ e_byzantium = {
 			if = {
 				limit = {
 					NOT = { culture = culture:greek }
-					culture = { has_cultural_pillar = heritage_byzantine }
+					culture = {
+						OR = {
+							has_cultural_pillar = heritage_byzantine
+							has_cultural_pillar = heritage_caucasian
+						}
+					}
 				}
 				add = @better_than_the_alternatives_score
 			}
+		}
+
+		cultural_names = {
+			name_list_italian = cn_candia
 		}
 
 		d_krete = {
@@ -8723,8 +8845,16 @@ e_byzantium = {
 
 			capital = c_chandax # Chandax
 
+			cultural_names = {
+				name_list_italian = cn_candia
+			}
+
 			c_chandax = {
 				color = { 205 110 35 }
+
+				cultural_names = {
+					name_list_italian = cn_candia
+				}
 
 				b_iraklio = {
 					province = 480
@@ -8746,6 +8876,10 @@ e_byzantium = {
 				color = { 210 145 20 }
 
 				#capital = 479 # Chania
+
+				cultural_names = {
+					name_list_italian = cn_la_canea
+				}
 
 				b_chania = {
 					province = 479
@@ -10503,7 +10637,12 @@ e_byzantium = {
 			if = {
 				limit = {
 					NOT = { culture = culture:greek }
-					culture = { has_cultural_pillar = heritage_byzantine }
+					culture = {
+						OR = {
+							has_cultural_pillar = heritage_byzantine
+							has_cultural_pillar = heritage_caucasian
+						}
+					}
 				}
 				add = @better_than_the_alternatives_score
 			}
@@ -10607,7 +10746,12 @@ e_byzantium = {
 			if = {
 				limit = {
 					NOT = { culture = culture:greek }
-					culture = { has_cultural_pillar = heritage_byzantine }
+					culture = {
+						OR = {
+							has_cultural_pillar = heritage_byzantine
+							has_cultural_pillar = heritage_caucasian
+						}
+					}
 				}
 				add = @better_than_the_alternatives_score
 			}
@@ -11350,7 +11494,12 @@ e_byzantium = {
 			if = {
 				limit = {
 					NOT = { culture = culture:greek }
-					culture = { has_cultural_pillar = heritage_byzantine }
+					culture = {
+						OR = {
+							has_cultural_pillar = heritage_byzantine
+							has_cultural_pillar = heritage_caucasian
+						}
+					}
 				}
 				add = @better_than_the_alternatives_score
 			}
@@ -11468,6 +11617,11 @@ e_byzantium = {
 					cultural_names = {
 						name_list_turkish = cn_ninica
 					}
+				}
+				b_soloi = {
+					province = 5674
+
+					color = { 200 20 40 }
 				}
 			}
 			c_lycandus = {
@@ -11728,7 +11882,7 @@ e_byzantium = {
 			}
 
 			c_lycaonia = {
-				color = { 200 50 50 }
+				color = { 210 50 60 }
 
 				cultural_names = {
 					name_list_greek = cn_lykaonia
@@ -11995,7 +12149,7 @@ e_byzantium = {
 				color = { 200 20 40 }
 
 				cultural_names = {
-					name_list_turkish = cn_bozkir
+					name_list_turkish = cn_sirista
 				}
 
 				b_isaura = {
@@ -12004,7 +12158,7 @@ e_byzantium = {
 					color = { 200 20 40 }
 
 					cultural_names = {
-						name_list_turkish = cn_zengibar_kalesi
+						name_list_turkish = cn_sirista
 					}
 				}
 				b_laranalia = {
@@ -12015,11 +12169,6 @@ e_byzantium = {
 					cultural_names = {
 						name_list_turkish = cn_karaman
 					}
-				}
-				b_soloi = {
-					province = 5674
-
-					color = { 200 20 40 }
 				}
 				b_derbe = {
 					province = 5675
@@ -12249,6 +12398,15 @@ e_byzantium = {
 						name_list_turkish = cn_gemerek
 					}
 				}
+				b_arasaxa = {
+					province = 5616
+
+					color = { 205 118 118 }
+
+					cultural_names = {
+						name_list_turkish = cn_akmescit
+					}
+				}
 			}
 			c_kyzistra = {
 				color = { 205 118 118 }
@@ -12275,15 +12433,6 @@ e_byzantium = {
 						name_list_turkish = cn_zile
 					}
 				}
-				b_arasaxa = {
-					province = 5616
-
-					color = { 205 118 118 }
-
-					cultural_names = {
-						name_list_turkish = cn_akmescit
-					}
-				}
 			}
 		}
 	}
@@ -12303,7 +12452,12 @@ e_byzantium = {
 			if = {
 				limit = {
 					NOT = { culture = culture:greek }
-					culture = { has_cultural_pillar = heritage_byzantine }
+					culture = {
+						OR = {
+							has_cultural_pillar = heritage_byzantine
+							has_cultural_pillar = heritage_caucasian
+						}
+					}
 				}
 				add = @better_than_the_alternatives_score
 			}
@@ -13528,27 +13682,27 @@ e_byzantium = {
 		}
 
 		d_georgia = {
-			color = { 200 185 185 }
+			color = { 184 156 156 }
 
 			capital = c_tbilisi # Tbilisi
 
 			c_tbilisi = {
-				color = { 200 195 195 }
+				color = { 161 137 137 }
 
 				b_tbilisi = {
 					province = 5759
 
-					color = { 200 185 185 }
+					color = { 161 137 137 }
 				}
 				b_dmanisi = {
 					province = 5758
 
-					color = { 200 185 185 }
+					color = { 161 137 137 }
 				}
 				b_rustavi = {
 					province = 5760
 
-					color = { 200 185 185 }
+					color = { 161 137 137 }
 				}
 			}
 			c_lori = {
@@ -14182,6 +14336,10 @@ e_italy = {
 	color = { 234 217 110 }
 
 	capital = c_roma # Rome
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 
 	ai_primary_priority = {
 		if = {
@@ -15397,6 +15555,10 @@ e_scandinavia = {
 
 	capital = c_skane #Lund - Archbishop seat of Scandinavia
 
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
+
 	ai_primary_priority = {
 		if = {
 			limit = {
@@ -16064,7 +16226,7 @@ e_scandinavia = {
 		}
 	}
 
-	tk_sapmi = {
+	k_sapmi = {
 		color = { 5 5 160 }
 
 		cultural_names = {
@@ -17286,7 +17448,7 @@ e_scandinavia = {
 			capital = c_nedenes # Arendall
 
 			c_nedenes = {
-				color = { 170 30 30 }
+				color = { 180 20 30 }
 
 				b_arendall = {
 					province = 249
@@ -18365,6 +18527,10 @@ e_wendish_empire = {
 	capital = c_vidzeme # Riga
 
 	definite_form = yes
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 
 	ai_primary_priority = {
 		if = {
@@ -19802,6 +19968,15 @@ e_wendish_empire = {
 			c_zemigalians = {
 				color = { 200 40 40 }
 
+				cultural_names = {
+					name_list_latgalian = cn_zemgale
+					name_list_lithuanian = cn_ziemgala
+					name_list_franconian = cn_semgallen
+					name_list_saxon = cn_semgallen
+					name_list_swabian = cn_semgallen
+					name_list_bavarian = cn_semgallen
+				}
+
 				#b_riga = {
 				#}
 				#b_bauska = {
@@ -20577,6 +20752,10 @@ e_west_slavia = { # West Slavs: Polish, Polabian, Czech, etc.
 	capital = c_krakowska # Krakowska
 
 	definite_form = yes
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 
 	ai_primary_priority = {
 		if = {
@@ -23153,6 +23332,10 @@ e_russia = {	#Kievan Rus
 
 	capital = c_kiev # Kiev
 
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
+
 	ai_primary_priority = {
 		if = {
 			limit = {
@@ -25153,7 +25336,7 @@ e_russia = {	#Kievan Rus
 		}
 	}
 
-	tk_bjarmaland = {
+	lk_bjarmaland = {
 		color = { 188 238 234 }
 
 		capital = c_kholmogory # Kholmogory
@@ -25531,6 +25714,10 @@ e_caspian-pontic_steppe = {
 	color = { 230 180 10 }
 
 	capital = c_itil # Itil
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 
 	k_pontic_steppe = {
 		color = { 85 40 5 }
@@ -26429,6 +26616,10 @@ e_volga-ural = {
 
 	capital = c_bolghar
 
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
+
 	k_volga_bulgaria = {
 		color = { 97 56 55 }
 
@@ -27297,7 +27488,7 @@ e_volga-ural = {
 		}
 	}
 
-	tk_permia = {
+	kjk_permia = {
 		color = { 204 188 127 }
 
 		capital = c_perm
@@ -27960,10 +28151,14 @@ e_volga-ural = {
 	}
 }
 
-tet_siberia = {
+ke_siberia = {
 	color = { 205 212 250 }
 
 	capital = c_tyumen
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 
 	k_yugra = {
 		color = { 210 245 210 }
@@ -29176,6 +29371,10 @@ e_mongolia = {
 
 	capital = c_karakorum
 
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
+
 	ai_primary_priority = {
 		if = {
 			limit = {
@@ -30130,7 +30329,7 @@ e_mongolia = {
 		}
 	}
 
-	k_khakassia = {
+	kj_khakassia = {
 		color = { 140 140 140}
 
 		capital = c_abakan
@@ -30472,7 +30671,7 @@ e_mongolia = {
 		}
 	}
 
-	tk_buryatia = {
+	kk_buryatia = {
 		color = { 50 115 160 }
 
 		capital = c_ulan_ude
@@ -30825,7 +31024,7 @@ e_mongolia = {
 		}
 	}
 
-	k_angara = {
+	kk_angara = {
 		color = { 55 55 55 }
 
 		capital = c_krasnoyarsk
@@ -31225,6 +31424,10 @@ e_tartaria = {
 	color = { 205 5 5 }
 
 	capital = c_turgay
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 
 	ai_primary_priority = {
 		if = {
@@ -32418,7 +32621,7 @@ e_tartaria = {
 			capital = c_semey
 
 			c_semey = {
-				color = { 200 150 50 }
+				color = { 210 140 50 }
 
 				b_semey = {
 					province = 7346
@@ -33357,6 +33560,10 @@ e_turan = {
 
 	capital = c_bukhara
 
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
+
 	ai_primary_priority = {
 		if = {
 			limit = {
@@ -33811,7 +34018,7 @@ e_turan = {
 	k_oghuz_il = {
 		color = { 235 35 35 }
 
-		capital = c_mangyshlak
+		capital = c_yangikent
 
 		ai_primary_priority = {
 			if = {
@@ -35345,6 +35552,10 @@ e_bactria = {
 	color = { 51 185 206 }
 	can_be_named_after_dynasty = no
 
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
+
 	#capital = c_balkh
 }
 
@@ -35354,6 +35565,10 @@ e_persia = {
 	capital = c_isfahan #	Esfahan
 
 	definite_form = yes
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 
 	ai_primary_priority = {
 		if = {
@@ -35477,7 +35692,7 @@ e_persia = {
 		}
 
 		d_kirman = {
-			color = { 35 125 260 }
+			color = { 35 125 255 }
 
 			capital = c_kirman # Kirman
 
@@ -36075,7 +36290,7 @@ e_persia = {
 				b_beiram = {
 					province = 4189
 
-					color = { 80 140 280 }
+					color = { 80 140 255 }
 				}
 				b_dun = {
 					province = 4190
@@ -37402,7 +37617,7 @@ e_persia = {
 				b_barda = {
 					province = 5779
 
-					color = { 20 175 1457 }
+					color = { 20 175 145 }
 				}
 			}
 			c_mugan = {
@@ -38638,22 +38853,22 @@ e_persia = {
 				}
 			}
 			c_harran = {
-				color = { 10 205 115 }
+				color = { 5 128 71 }
 
 				b_harran = {
 					province = 4870
 
-					color = { 10 205 115 }
+					color = { 5 128 71 }
 				}
 				b_saruj = {
 					province = 4874
 
-					color = { 10 205 115 }
+					color = { 5 128 71 }
 				}
 				b_tall_mahra = {
 					province = 4878
 
-					color = { 10 205 115 }
+					color = { 5 128 71 }
 				}
 			}
 			c_dausar = {
@@ -38923,6 +39138,10 @@ e_carpathia = {
 	color = { 210 115 35 }
 
 	capital = c_visegrad # Pest
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 
 	k_dacia = {
 		color = { 237 147 52 }
@@ -41138,6 +41357,10 @@ e_france = {
 
 	capital = c_ile_de_france
 
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
+
 	ai_primary_priority = {
 		if = {
 			limit = {
@@ -42330,6 +42553,24 @@ e_france = {
 		}
 		d_aquitaine = {
 			color = { 43 24 226 }
+
+			ai_primary_priority = {
+				if = {
+					limit = {
+						culture = culture:occitan
+					}
+					add = @correct_culture_primary_score
+				}
+				if = {
+					limit = {
+						OR = {
+							culture = culture:norman
+							culture = culture:french
+						}
+					}
+					add = @better_than_the_alternatives_score
+				}
+			}
 
 			capital = c_angouleme # Angouleme
 
@@ -43665,6 +43906,8 @@ e_spain = {
 
 			NOT = { exists = struggle:iberian_struggle }
 		}
+
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
 	}
 
 	ai_primary_priority = {
@@ -47067,6 +47310,10 @@ e_maghreb = {
 
 	capital = c_kairwan # Kairouan
 
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
+
 	ai_primary_priority = {
 		if = {
 			limit = {
@@ -48697,7 +48944,7 @@ e_maghreb = {
 		}
 	}
 
-	k_anbiya = {
+	lk_anbiya = {
 		color = { 102 99 95 }
 
 		capital = c_wadan # Wadan AKA Ouadane
@@ -48916,7 +49163,7 @@ e_maghreb = {
 		}
 	}
 
-	k_sahara = {
+	lk_sahara = {
 		color = { 199 144 56 }
 
 		capital = c_murzuk # in Fezzan
@@ -49284,6 +49531,10 @@ e_arabia = {
 	}
 
 	definite_form = yes
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 
 	ai_primary_priority = {
 		if = {
@@ -50684,6 +50935,12 @@ e_arabia = {
 				}
 				add = @correct_culture_primary_score
 			}
+			if = {
+				limit = {
+					culture = { has_cultural_pillar = heritage_arabic }
+				}
+				add = @better_than_the_alternatives_score
+			}
 		}
 
 		d_cyrenaica = {
@@ -51967,6 +52224,10 @@ e_abyssinia = {
 	color = { 181 133 68 }
 
 	capital = c_lasta
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 
 	ai_primary_priority = {
 		if = {
@@ -53259,7 +53520,7 @@ e_abyssinia = {
 		}
 	}
 
-	tk_damot = {
+	k_damot = {
 		color = { 166 68 208 }
 
 		capital = c_damot
@@ -53891,10 +54152,14 @@ e_abyssinia = {
 	}
 }
 
-te_ajuraan = {
+e_ajuraan = {
 	color = { 218 86 25 }
 
 	capital = c_mogadishu
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 
 	ai_primary_priority = {
 		if = {
@@ -54398,10 +54663,14 @@ te_ajuraan = {
 	}
 }
 
-tett_kanem_bornu = {
+ke_kanem_bornu = {
 	color = { 55 230 250 }
 
 	capital = c_kanem #	Manan
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 
 	k_kanem = {
 		color = { 124 184 124 }
@@ -55518,10 +55787,14 @@ tett_kanem_bornu = {
 	}
 }
 
-te_mali = {
+ek_mali = {
 	color = { 225 223 0 }
 
 	capital = c_niani #	Niani
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 
 	ai_primary_priority = {
 		if = {
@@ -57295,10 +57568,14 @@ te_mali = {
 	}
 }
 
-te_guinea = {
+ek_guinea = {
 	color = { 175 173 90 }
 
 	capital = c_temne
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 
 	ai_primary_priority = {
 		if = {
@@ -59434,6 +59711,10 @@ te_guinea = {
 e_india = {		# Titular, created by special decision only if entire India is united
 	color = { 255 110 0 }
 
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
+
 	ai_primary_priority = {
 		add = @always_primary_score
 	}
@@ -59444,6 +59725,10 @@ e_rajastan = {
 
 	capital = c_kanyakubja # Kanyakubja
 
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
+
 	ai_primary_priority = {
 		if = {
 			limit = {
@@ -59453,7 +59738,7 @@ e_rajastan = {
 		}
 	}
 
-	tk_sindh = {
+	k_sindh = {
 		color = { 225 135 20 }
 
 		capital = c_debul # Debul
@@ -59702,7 +59987,7 @@ e_rajastan = {
 		}
 	}
 
-	tk_punjab = {
+	k_punjab = {
 		color = { 255 90 20 }
 
 		capital = c_lahur # Lahur
@@ -60128,7 +60413,7 @@ e_rajastan = {
 		}
 	}
 
-	tk_delhi = {
+	k_delhi = {
 		color = { 220 150 75 }
 
 		capital = c_delhi # Delhi
@@ -60428,7 +60713,7 @@ e_rajastan = {
 		}
 	}
 
-	tk_gujarat = {
+	k_gujarat = {
 		color = { 155 80 28 }
 
 		capital = c_sarasvata_mandala # Sarasvata Mandala
@@ -60769,7 +61054,7 @@ e_rajastan = {
 		}
 	}
 
-	tk_rajputana = {
+	k_rajputana = {
 		color = { 200 70 0 }
 
 		capital = c_ajayameru # Ajayameru
@@ -61177,7 +61462,7 @@ e_rajastan = {
 		}
 	}
 
-	tk_malwa = {
+	k_malwa = {
 		color = { 255 200 25 }
 
 		capital = c_ujjayini # Ujjayini
@@ -61472,7 +61757,7 @@ e_rajastan = {
 		}
 	}
 
-	tk_kosala = {
+	k_kosala = {
 		color = { 205 60 10 }
 
 		capital = c_kanyakubja # Kanyakubja
@@ -61736,11 +62021,59 @@ e_rajastan = {
 		}
 	}
 
-	t_himalaya = {
+	k_himalaya = {
 		color = { 250 40 0 }
 
 		capital = c_kathmandu
+        d_kinnaur = {
+			color = { 197 235 178 }
 
+			capital = c_kamru
+
+			c_kamru = {
+				color = { 217 225 178 }
+
+				b_kamru = {
+					province = 9050
+
+					color = { 21 21 87 }
+				}
+				b_kalpa = {
+					province = 9049
+
+					color = { 21 21 87 }
+				}
+				b_poo = {
+					province = 9048
+
+					color = { 21 21 87 }
+				}
+				b_nako = {
+					province = 9044
+
+					color = { 21 21 87 }
+				}
+			}
+			c_dhankar = {
+				color = { 197 215 198 }
+
+				b_dhankar = {
+					province = 9046
+
+					color = { 15 15 90 }
+				}
+				b_tabo = {
+					province = 9045
+
+					color = { 15 15 90 }
+				}
+				b_kardang = {
+					province = 9047
+
+					color = { 15 15 90 }
+				}
+			}
+		}
 		d_kurmanchal = {
 			color = { 255 100 5 }
 
@@ -62072,6 +62405,254 @@ e_rajastan = {
 				add = @correct_culture_primary_score
 			}
 		}
+				d_ladakh = {
+			color = { 130 140 180 }
+
+			capital = c_leh
+
+			c_leh = {
+				color = { 108 118 158 }
+
+				b_leh = {
+					province = 9002
+
+					color = { 108 118 158 }
+				}
+				b_shey = {
+					province = 9003
+
+					color = { 108 118 158 }
+				}
+				b_khalatse = {
+					province = 9004
+
+					color = { 108 118 158 }
+				}
+				b_tangtse = {
+					province = 9005
+
+					color = { 108 118 158 }
+				}
+			}
+			c_demchok = {
+				color = { 115 125 165 }
+
+				b_demchok = {
+					province = 9006
+
+					color = { 115 125 165 }
+				}
+				b_hanle = {
+					province = 9007
+
+					color = { 115 125 165 }
+				}
+				b_chusul = {
+					province = 9008
+
+					color = { 115 125 165 }
+				}
+			}
+			c_diskit = {
+				color = { 105 115 150 }
+
+				b_diskit = {
+					province = 9009
+
+					color = { 105 115 150 }
+				}
+				b_panamik = {
+					province = 9010
+
+					color = { 105 115 150 }
+				}
+				b_turtuk = {
+					province = 9011
+
+					color = { 105 115 150 }
+				}
+				b_dipsang = {
+					province = 9012
+
+					color = { 105 115 150 }
+				}
+			}
+		}
+
+		d_zanskar = {
+			color = { 150 190 245 }
+
+			capital = c_padum
+
+			c_padum = {
+				color = { 150 190 245 }
+
+				b_padum = {
+					province = 9013
+
+					color = { 150 190 245 }
+				}
+				b_zangla = {
+					province = 9014
+
+					color = { 150 190 245 }
+				}
+				b_lingshet = {
+					province = 9015
+
+					color = { 150 190 245 }
+				}
+			}
+			c_darcha = {
+				color = { 155 160 245 }
+
+				b_darcha = {
+					province = 9016
+
+					color = { 155 160 245 }
+				}
+				b_karzok = {
+					province = 9017
+
+					color = { 155 160 245 }
+				}
+			}
+			c_purig = {
+				color = { 145 175 255 }
+
+				b_purig = {
+					province = 9018
+
+					color = { 145 175 255 }
+				}
+				b_dras = {
+					province = 9019
+
+					color = { 145 175 255 }
+				}
+			}
+		}
+
+		d_baltiyul = { # Baltistan
+			color = { 190 210 245 }
+
+			capital = c_skardu
+
+			c_skardu = {
+				color = { 190 210 250 }
+
+				b_skardu = {
+					province = 9020
+
+					color = { 190 210 250 }
+				}
+				b_roundu = {
+					province = 9021
+
+					color = { 190 210 250 }
+				}
+				b_tolti = {
+					province = 9022
+
+					color = { 190 210 250 }
+				}
+				b_gultari = {
+					province = 9023
+
+					color = { 190 210 250 }
+				}
+			}
+			c_shigar = {
+				color = { 200 225 255 }
+
+				b_shigar = {
+					province = 9026
+
+					color = { 200 225 255 }
+				}
+				b_askole = {
+					province = 9027
+
+					color = { 200 225 255 }
+				}
+			}
+			c_khaplu = {
+				color = { 205 205 255 }
+
+				b_khaplu = {
+					province = 9028
+
+					color = { 205 205 255 }
+				}
+				b_haldi = {
+					province = 9029
+
+					color = { 205 205 255 }
+				}
+			}
+		}
+
+		d_aksai_chin = {
+			color = { 135 179 255 }
+
+			capital = c_khurnak
+
+			cultural_names = {
+				name_list_bodpa = cn_karpoyul
+				name_list_tsangpa = cn_karpoyul
+				name_list_lhomon = cn_karpoyul
+				name_list_sumpa = cn_karpoyul
+				name_list_zhangzhung = cn_karpoyul
+			}
+
+			c_khurnak = {
+				color = { 145 180 240 }
+
+				b_khurnak = {
+					province = 9030
+
+					color = { 145 180 240 }
+				}
+				b_nischu = {
+					province = 9031
+
+					color = { 145 180 240 }
+				}
+				b_sumna = {
+					province = 9032
+
+					color = { 145 180 240 }
+				}
+			}
+			c_thaldat = {
+				color = { 125 150 220 }
+
+				b_thaldat = {
+					province = 9033
+
+					color = { 125 150 220 }
+				}
+				b_sumnal = {
+					province = 9034
+
+					color = { 125 150 220 }
+				}
+			}
+			c_sumdo = {
+				color = { 100 115 200 }
+
+				b_sumdo = {
+					province = 9035
+
+					color = { 100 115 200 }
+				}
+				b_chungtash = {
+					province = 9036
+
+					color = { 100 115 200 }
+				}
+			}
+		}
 
 		d_kasmira = {
 			color = { 245 160 31 }
@@ -62198,12 +62779,16 @@ e_rajastan = {
 	}
 }
 
-ke_bengal = {
+e_bengal = {
 	color = { 0 120 40 }
 
 	capital = c_laksmanavati # Laksmanavati
 
 	definite_form = yes
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 
 	ai_primary_priority = {
 		if = {
@@ -63673,7 +64258,7 @@ ke_bengal = {
 		}
 	}
 
-	k_pagan = {
+	lk_pagan = {
 		color = { 166 40 224 }
 
 		capital = c_pagan
@@ -64199,12 +64784,16 @@ ke_bengal = {
 	}
 }
 
-ke_deccan = {
+e_deccan = {
 	color = { 190 20 50 }
 
 	capital = c_kalyani
 
 	definite_form = yes
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 
 	ai_primary_priority = {
 		if = {
@@ -65625,7 +66214,7 @@ ke_deccan = {
 				b_bhadracala = {
 					province = 7913
 
-					color = { 195 65 650 }
+					color = { 195 65 65 }
 				}
 			}
 		}
@@ -65861,10 +66450,14 @@ ke_deccan = {
 	}
 }
 
-ke_tibet = {
+ek_tibet = {
 	color = { 250 40 0 }
 
 	capital = c_lhasa
+
+	can_create = {
+		rule_title_creation_imperial_power_projection_title_creation_trigger = yes
+	}
 
 	k_u = {
 		color = { 3 144 252 }
@@ -68647,255 +69240,6 @@ ke_tibet = {
 
 		capital = c_leh
 
-		d_ladakh = {
-			color = { 130 140 180 }
-
-			capital = c_leh
-
-			c_leh = {
-				color = { 108 118 158 }
-
-				b_leh = {
-					province = 9002
-
-					color = { 108 118 158 }
-				}
-				b_shey = {
-					province = 9003
-
-					color = { 108 118 158 }
-				}
-				b_khalatse = {
-					province = 9004
-
-					color = { 108 118 158 }
-				}
-				b_tangtse = {
-					province = 9005
-
-					color = { 108 118 158 }
-				}
-			}
-			c_demchok = {
-				color = { 115 125 165 }
-
-				b_demchok = {
-					province = 9006
-
-					color = { 115 125 165 }
-				}
-				b_hanle = {
-					province = 9007
-
-					color = { 115 125 165 }
-				}
-				b_chusul = {
-					province = 9008
-
-					color = { 115 125 165 }
-				}
-			}
-			c_diskit = {
-				color = { 105 115 150 }
-
-				b_diskit = {
-					province = 9009
-
-					color = { 105 115 150 }
-				}
-				b_panamik = {
-					province = 9010
-
-					color = { 105 115 150 }
-				}
-				b_turtuk = {
-					province = 9011
-
-					color = { 105 115 150 }
-				}
-				b_dipsang = {
-					province = 9012
-
-					color = { 105 115 150 }
-				}
-			}
-		}
-
-		d_zanskar = {
-			color = { 150 190 245 }
-
-			capital = c_padum
-
-			c_padum = {
-				color = { 150 190 245 }
-
-				b_padum = {
-					province = 9013
-
-					color = { 150 190 245 }
-				}
-				b_zangla = {
-					province = 9014
-
-					color = { 150 190 245 }
-				}
-				b_lingshet = {
-					province = 9015
-
-					color = { 150 190 245 }
-				}
-			}
-			c_darcha = {
-				color = { 155 160 245 }
-
-				b_darcha = {
-					province = 9016
-
-					color = { 155 160 245 }
-				}
-				b_karzok = {
-					province = 9017
-
-					color = { 155 160 245 }
-				}
-			}
-			c_purig = {
-				color = { 145 175 255 }
-
-				b_purig = {
-					province = 9018
-
-					color = { 145 175 255 }
-				}
-				b_dras = {
-					province = 9019
-
-					color = { 145 175 255 }
-				}
-			}
-		}
-
-		d_baltiyul = { # Baltistan
-			color = { 190 210 245 }
-
-			capital = c_skardu
-
-			c_skardu = {
-				color = { 190 210 250 }
-
-				b_skardu = {
-					province = 9020
-
-					color = { 190 210 250 }
-				}
-				b_roundu = {
-					province = 9021
-
-					color = { 190 210 250 }
-				}
-				b_tolti = {
-					province = 9022
-
-					color = { 190 210 250 }
-				}
-				b_gultari = {
-					province = 9023
-
-					color = { 190 210 250 }
-				}
-			}
-			c_shigar = {
-				color = { 200 225 255 }
-
-				b_shigar = {
-					province = 9026
-
-					color = { 200 225 255 }
-				}
-				b_askole = {
-					province = 9027
-
-					color = { 200 225 255 }
-				}
-			}
-			c_khaplu = {
-				color = { 205 205 255 }
-
-				b_khaplu = {
-					province = 9028
-
-					color = { 205 205 255 }
-				}
-				b_haldi = {
-					province = 9029
-
-					color = { 205 205 255 }
-				}
-			}
-		}
-
-		d_aksai_chin = {
-			color = { 135 179 255 }
-
-			capital = c_khurnak
-
-			cultural_names = {
-				name_list_bodpa = cn_karpoyul
-				name_list_tsangpa = cn_karpoyul
-				name_list_lhomon = cn_karpoyul
-				name_list_sumpa = cn_karpoyul
-				name_list_zhangzhung = cn_karpoyul
-			}
-
-			c_khurnak = {
-				color = { 145 180 240 }
-
-				b_khurnak = {
-					province = 9030
-
-					color = { 145 180 240 }
-				}
-				b_nischu = {
-					province = 9031
-
-					color = { 145 180 240 }
-				}
-				b_sumna = {
-					province = 9032
-
-					color = { 145 180 240 }
-				}
-			}
-			c_thaldat = {
-				color = { 125 150 220 }
-
-				b_thaldat = {
-					province = 9033
-
-					color = { 125 150 220 }
-				}
-				b_sumnal = {
-					province = 9034
-
-					color = { 125 150 220 }
-				}
-			}
-			c_sumdo = {
-				color = { 100 115 200 }
-
-				b_sumdo = {
-					province = 9035
-
-					color = { 100 115 200 }
-				}
-				b_chungtash = {
-					province = 9036
-
-					color = { 100 115 200 }
-				}
-			}
-		}
-
 		d_rutog = {
 			color = { 162 210 235 }
 
@@ -70369,6 +70713,1276 @@ ke_tibet = {
 			}
 		}
 	}
+}
+
+# NOBLE FAMILIES
+
+# 867
+
+d_nf_ampelas = { # Ampelas (Khaldia)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_aplakes = { # Aplakes (Thessalonika)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_agelastos = { # Agelastos (Achaia)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_doukas = { # Doukas (Paphlagonia)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_gerontas = { # Gerontas (Dyrrachion)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_hexavoulis = { # Hexavoulis (Epirus)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_kardias = { # Kardias (Sebasteia)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_katakalitzes = { # Katakalitzes (Boukellarion)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_kourkouas = { # Kourkouas (Armeniac)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_krateros = { # Krateros (Ephesos)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_lachanodrakon = { # Lachanodrakon (Thrakesion)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_makedon = { # Makedon (Kappadokia)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_maleios = { # Maleios (Kappadokia)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_maleinos = { # Maleinos (Charsianon)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_maurikios = { # Maurikios (Opsikion)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_melissenos = { # Melissenos (Anatolikon)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_pastillas = { # Pastillas (Kibyrrhaiotai)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_ooryphas = { # Ooryphas (Aegean)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_sellokalas = { # Sellokalas (Optimatoi)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_skleros = { # Skleros (Athens)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+# 1066
+
+d_nf_arcruni = { # Arcruni (Sebasteia)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_argyros = { # Argyros (Ephesos)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_basiliakos = { # Basiliakos (Thessalonika)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_botaneiates = { # Botaneiates (Antioch)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_bryennios = { # Bryennios (Kibyrrhaiotai)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_diogenes = { # Diogenes (Anatolikon)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_dragosevic = { # Dragosevic (Rashka)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_kamateros = { # Kamateros (Paphlagonia)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_karandenos = { # Karandenos (Bulgaria)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_kaukadenos = { # Kaukadenos (Opsikion)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_komnenos = { # Komnenos (Armeniac)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_makrembolites = { # Makrembolites (Aegean)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_murzuphlos = { # Murzuphlos (Achaia)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_ouranos = { # Ouranos (Krete)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_pahlavuni = { # Pahlavuni (Vaspurakan)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_palaiologos = { # Palaiologos (Epirus)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_pegonites = { # Pegonites (Cyprus)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_phokas = { # Phokas (Charsianon)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_pleustes = { # Pleustes (Strymon)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_synadenos = { # Synadenos (Dyrrachion)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_tarchaneiotes = { # Tarchaneiotes (Kilikia)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_taronites = { # Taronites (Khaldia)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_varajnuni = { # Varajnuni (Mesopotamia)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_saronites = { # Saronites (Constantinople)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_garidas = { # Garidas (Constantinople)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_areobindenos = { # Areobindenos (Constantinople)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_alopos = { # Alopos (Constantinople)
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_durres = {  # Durres (Dyrrachion)
+	color = { 100 100 100 }
+	capital = c_dyrrachion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+# 1178
+
+d_nf_angelos = { # Angelos
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_batatzes = { # Batatzes
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_branas = { # Branas
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_gabras = { # Gabras (Trebizond)
+	color = { 100 100 100 }
+	capital = c_trebizond
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_kamytzes = { # Kamytzes
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_kantakouzenos = { # Kantakouzenos
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_komnenos_doukas = { # Komnenos Doukas
+	color = { 100 100 100 }
+	capital = c_epeiros
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_kontostephanos = { # Kontostephanos
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_lampardas = { # Lampardas
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_macrodoukas = { # Macrodoukas
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_petraliphas = { # Petraliphas
+	color = { 100 100 100 }
+	capital = c_adrianopolis # Didymoteichon
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_raoul = { # Raoul (Smyrna)
+	color = { 100 100 100 }
+	capital = c_ionia
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_rogerios = { # Rogerios
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+# LAAMP TITLES
+
+# 867
+
+d_laamp_anangapida = { # Anangapida
+	color = { 100 100 100 }
+	capital = c_kasmira
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_laamp_ziyar = { # Ziyar
+	color = { 100 100 100 }
+	capital = c_gilan
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_laamp_ahwazi = { # Husayn
+	color = { 100 100 100 }
+	capital = c_kufa
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_laamp_guttorm = { # Guttorm
+	color = { 100 100 100 }
+	capital = c_fyn
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_laamp_hrolfr = { # Hrolfr
+	color = { 100 100 100 }
+	capital = c_skane
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_laamp_ubbe = { # Ubbe
+	color = { 100 100 100 }
+	capital = c_north_riding
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_laamp_enian = { # Enian Qaghan
+	color = { 100 100 100 }
+	capital = c_karabalgasun
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+# 1066
+
+d_laamp_sabbah = { # Hassan-i Sabbah
+	color = { 100 100 100 }
+	capital = c_rayy # Rayy, capital of Persia
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_laamp_wake = { # Hereweard the Wake
+	color = { 100 100 100 }
+	capital = c_brugge # Bruges, capital of Flanders
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_laamp_el_cid = { # El Cid
+	color = { 100 100 100 }
+	capital = c_burgos # Burgos, capital of Castile
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_laamp_crispin = { # Robert Crispin
+	color = { 100 100 100 }
+	capital = c_byzantion # Constantinople, capital of ERE
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_laamp_suleyman = { # Suleyman ibn Qutalmish
+	color = { 100 100 100 }
+	capital = c_marash # Southeastern Taurus
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_laamp_wallada = { # Wallada bint al-Mustakfi
+	color = { 100 100 100 }
+	capital = c_cordoba # Cordoba
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_laamp_danishmend = { # Danishmend Taylu
+	color = { 100 100 100 }
+	capital = c_melitene
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_laamp_voiteh = { # Georgi Voiteh
+	color = { 100 100 100 }
+	capital = c_skopje
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_laamp_aelfwine = { # Aelfwine Haroldson
+	color = { 100 100 100 }
+	capital = c_rouergue
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_laamp_karatzas = { # Argyros Karatzas
+	color = { 100 100 100 }
+	capital = c_philippopolis
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+# 1178
+
+d_laamp_kizil_buga = { # Kızıl Buğa Kayı
+	color = { 100 100 100 }
+	capital = c_merv
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_laamp_ali_ibn_reverter = { # Abu-l-Hasan Ali ibn Reverter
+	color = { 100 100 100 }
+	capital = c_marrakesh # Marrakesh
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+
+}
+
+d_laamp_andronikos_komnenos = { # Andronikos Komnenos
+	color = { 100 100 100 }
+	capital = c_cerasus # Oinaion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_laamp_asen = { # Theodor-Peter of Bulgaria
+	color = { 100 100 100 }
+	capital = c_turnovo # Turnovo
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_laamp_mieszko = { # Mieszko the Old
+	color = { 100 100 100 }
+	capital = c_opava # Opava
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_laamp_raimon_brun = { # Raimon-Brun de Gramont
+	color = { 100 100 100 }
+	capital = c_labourd # Labourd
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_laamp_lalibela = { # Lalibela
+	color = { 100 100 100 }
+	capital = c_jerusalem # Jerusalem
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_laamp_muhammad_bakhtiyar = { # Muhammad Bakhtiyar
+	color = { 100 100 100 }
+	capital = c_bost # Bost
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_laamp_raoul = { # Roger Raoul
+	color = { 100 100 100 }
+	capital = c_apulia # capital of de Hauteville Normans
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
 }
 
 # OBSOLETE TITLES

@@ -3,5 +3,5 @@ tags={
 	"Gameplay"
 }
 name="Depop"
-supported_version="1.12.1"
-path="mod/depop"
+supported_version="1.13"
+path="mod/Depop"
