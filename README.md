@@ -1,51 +1,57 @@
-DEPOP
+# **DEPOP**
 
-[This mod removes redundant or less prominent kingdoms and empires, providing a streamlined and optimized map for smoother gameplay. Enjoy improved performance and a more focused gameplay experience without unnecessary clutter.]
-Features
+This mod removes redundant or less prominent kingdoms and empires, providing a streamlined and optimized map for smoother gameplay. Enjoy improved performance and a more focused gameplay experience without unnecessary clutter.
 
-    [Regions Removed:
+---
 
-    Scandinavia:
-        Kingdom of Sapmi
+## **Features**
 
-    Eastern Europe:
-        Kingdom of Bjarmaland
-        Kingdom of Perm
+### **Regions Removed**
 
-    Siberia:
-        All kingdoms and empires
+- **Tibet**  
+  - All kingdoms and empires have been removed.
+- **North Africa**  
+  - **Kingdom of Anbiya**  
+  - **Kingdom of Sahara**
+- **Sub-Saharan Africa**  
+  - **Mali**, **Guinea**, and **Kanem-Bornu** have been removed.
+- **Siberia**  
+  - All kingdoms and empires have been removed.
+- **Eastern Europe**  
+  - **Kingdom of Bjarmaland**  
+  - **Kingdom of Perm**
 
-    North Africa:
-        Kingdom of Anbiya
-        Kingdom of Sahaara
+### **Restored Regions**
 
-    Sub-Saharan Africa:
-        All kingdoms and empires,
+- **India**  
+  - Fully restored.
+- **Scandinavia**  
+  - **Kingdom of Sapmi** has been restored.
 
-    Tibet:
-        All kingdoms and empires
+### **De Jure Adjustments**
 
-    India:
-        Removed everything Except the Kigdom of Kashmir.]
-    [Any additional changes or improvements made.]
+- The **Duchies of Kinnaur, Ladakh, Baltiyul, Aksai-Chin,** and **Zanskar** are now de jure parts of the **Empire of Rajasthan**.
 
-Installation
+### **Title Restoration Mechanic**
 
-    [It is a normal installation]
-    []
-Removing or Adding Titles:**
-  - Open the `common/00_landed_titles.txt` file in the mod directory using a text editor.
-  - To remove a title, delete the corresponding line from the file.Or put an extra letter infront of a title you want to remove like k_sapmi goes tk_sapmi
-  - To add a title, follow the format used in the file for other titles.
-  - You can get the titles you need from vanilla game.or just remove the letter you put like in tk_sapmi it goes k_sapmi and you get the title working again.
-  - Save the changes and restart the game for them to take effect.
- 
- Contributing-
+- Titles can no longer be manually added back by editing files directly. You must request for the region to be readded through the mod's mechanics or events.
 
-[While the current focus of the mod is on removing specific regions, we also welcome contributions aimed at reducing the overall number of counties for improved performance. If you have ideas or code changes to achieve this goal, please feel free to share them with us through pull requests.]
+### **Bug Fixes**
 
-"Feel free to share this mod anywhere you like! While crediting me is appreciated, it's not mandatory. Enjoy!"
+- Fixed the fallback capital issue where removed titles defaulted to **England** (due to **Britannia** being the first defined landed title with **London** as the capital). This issue has been resolved, ensuring proper title behavior.
 
+---
 
-Bugs-
- - The removed titles are england for some reason,Although it doesnt have any affect on the gameplay because the counties in it dont count and are not present in the game i guess it has something to do with province mapping, but yeah enjoy Colonial English Empire.
+## **Contributing**
+
+Contributions aimed at reducing the overall number of counties for improved performance are welcomed. If you have ideas or code changes, please share them with me through pull requests.
+
+Feel free to share this mod anywhere you like! While crediting me is appreciated, it's not mandatory. **Enjoy!**
+
+---
+
+## **Bugs**
+
+- No known major bugs. If you encounter issues, report them via GitHub.
+
+---
