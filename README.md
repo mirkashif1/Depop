@@ -34,7 +34,7 @@ This mod removes redundant or less prominent kingdoms and empires, providing a s
 
 ### **Title Restoration Mechanic**
 
-- Titles can no longer be manually added back by editing files directly. You must request for the region to be readded through the mod's mechanics or events.
+- Titles can no longer be manually added back by editing files directly.
 
 ### **Bug Fixes**
 
